@@ -1,0 +1,373 @@
+/* Footer */
+
+footer {
+    overflow: hidden;
+    width: 100%;
+    height: 475px;
+    background-color: black;
+    color: white;
+}
+
+footer .wrap-content > div {
+    float: left;
+    width: 25%;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-family: "TrebuchetMs";
+}
+
+footer a {
+    text-decoration: none;
+    color: #0065a9;
+    transition: all 300ms;
+}
+
+footer h5 {
+    display: block;
+    background: url(./img/pxgray.png), white;
+    height: 50px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: "BebasNeue";
+    font-size: 40px;
+    line-height: 50px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+footer ul {
+    text-align: left;
+    margin: 20px;
+    font-size: 22px;
+}
+
+footer ul li {
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+footer ul li a {
+    display: block;
+    height: 30px;
+    transition: all 300ms;
+}
+
+footer ul li:hover a {
+    color: white;
+    padding-left: 45px;
+    width: 100%;
+}
+
+footer iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 7px;
+    border: 4px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+footer img {
+    margin-bottom: 15px;
+}
+
+footer #browsers img {
+    width: 13%;
+}
+
+#signature {
+    font-size: 20px;
+    color: #ccc;
+}
+
+/* Responsive */
+
+@media (max-width: 1250px) {
+    .wrap-content {
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin: 1.5%;
+    }
+    
+    .logo {
+        width: 20%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1030px) {
+    .wrap-content {
+        width: 95%;
+    }
+
+    .logo h3 {
+        font-size: 35px;
+        margin-right: 32px;
+    }
+
+    .banner h1 {
+        font-size: 40px;
+        margin: 2% 22%;
+    }
+
+    aside input[type="button"], 
+    aside input[type="submit"] {
+        padding-left: 0px;
+        font-size: 15px;
+    }
+
+    .login input[type="button"], 
+    .login input[type="submit"], 
+    .login input[type="reset"], 
+    .login button {
+        margin-left: 10px;
+    }
+
+    .login a {
+        font-size: 11px;
+    }
+
+    #articles {
+        width: 65%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer .wrap-content > div {
+        width: 22%;
+    }
+
+    footer h5 {
+        font-size: 23px;
+    }
+
+    footer img {
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap-content {
+        width: 100%;
+    }
+
+    .logo h3 {
+        margin-right: 13px;
+    }
+
+    aside h3 {
+        font-size: 24px;
+    }
+
+    aside input[type="text"] {
+        width: 83%;
+    }
+
+    .social a {
+        margin-left: 0px;
+    }
+
+    .social .overlay {
+        margin-left: 40px;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .card .category {
+        font-size: 15px;
+    }
+
+    .card .description {
+        display: none;
+    }
+
+    #articles h2 {
+        width: 95%;
+    }
+
+    #articles article {
+        width: 95%;
+    }
+    footer .wrap-content > div {
+        margin: 3.5%;
+    }
+
+    #signature {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        width: 100%;
+        height: 125px;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    .menu {
+        clear: both;
+        float: none;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .banner h1 {
+        margin: 2% 16%;
+    }
+
+}
+
+@media (max-width: 565px) {
+    .wrap-content {
+        width: 95%;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    .logo h3 {
+        float: none;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+        margin: 4% 13%;
+    }
+
+    .card {
+        padding: 0px;
+    }
+
+    aside {
+        width: 93%;
+        min-height: auto;
+    }
+
+    aside input[type="text"] {
+        width: 93%;
+    }
+
+    .social a {
+        margin-left: 10px;
+    }
+
+    .social .overlay {
+        margin-left: 55px;
+    }
+
+    #articles {
+        width: 93%;
+        min-height: auto;
+        
+    }
+
+    footer {
+        height: auto;
+    }
+
+    footer .wrap-content > div {
+        width: 93%;
+        margin: 15px;
+        margin-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    footer h5 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 465px) {
+    .header {
+        height: 185px;
+    }
+
+    .banner {
+        height: 75px;
+    }
+
+    .banner h1 {
+        font-size: 20px;
+    }
+
+    .card .icon {
+        font-size: 30px;
+    }
+
+    .card:hover .icon {
+        font-size: 30px;
+    }
+
+    .card .category {
+        font-size: 12px;
+    }
+
+    aside input[type="text"] {
+        width: 90%;
+    }
+
+    #articles .data {
+        padding: 0px;
+        font-size: 10px;
+        line-height: 26px;
+    }
+
+    #articles h2 {
+        font-size: 30px;
+    }
+
+    #articles article h4  {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    #articles article p {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 270px) {
+    .logo {
+        width: 60%;
+    }
+
+    .menu ul li {
+        font-size: 23px;
+        margin: 0px 10px 0px 10px
+    }
+}
+
+@media (max-width: 222px) {
+    .menu ul li {
+        line-height: 30px;
+    }
+
+    #articles .data {
+        line-height: 14px;
+    }
+}

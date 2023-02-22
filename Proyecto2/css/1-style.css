@@ -1,0 +1,331 @@
+/* Fonts */
+
+@font-face {
+    font-family: "TrebuchetMs";
+    src: url(./fonts/TrebuchetMS.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url(./fonts/BebasNeue.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "WebSymbols";
+    src: url(./fonts/websymbols-regular-webfont.eot);
+    src: url(./fonts/websymbols-regular-webfont.eot?#iefix) format('embedded-opentype'),
+        url(./fonts/websymbols-regular-webfont.woff) format('woff'),
+        url(./fonts/websymbols-regular-webfont.ttf) format('truetype'),
+        url(./fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format('svg');
+        font-weight: normal;
+        font-style: normal;
+}
+
+/* Generals style */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./img/pattern.png);
+}
+
+.wrap-content {
+    width: 1250px;
+    margin: 0px auto;
+}
+
+.icon {
+    font-family: "WebSymbols";
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/* Header */
+
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    font-family: "BebasNeue";
+}
+
+.logo {
+    float: left;
+    width: 16%;
+    background-color: #00538c;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-left: 2px;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+}
+
+.logo:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.logo .gear {
+    font-family: "WebSymbols";
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 26px;
+    animation-name: rotate-gear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate-gear {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.logo:hover .gear {
+    animation: fromBellow 500ms linear;
+}
+
+@keyframes fromBellow {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.logo h3 {
+    display: block;
+    float: right;
+    margin-top: 5px;
+    margin-right: 65px;
+    font-size: 40px;
+    text-transform: uppercase;
+    transition: all 200ms;
+}
+
+.logo:hover h3 {
+    animation: fromRight 500ms linear;
+}
+
+@keyframes fromRight {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.menu {
+    float: right;
+    height: 70px;
+    background: transparent;
+}
+
+.menu ul li {
+    display: inline-block;
+    font-size: 25px;
+    margin: 0px 20px 0px 20px;
+    letter-spacing: 1px;
+    line-height: 72px;
+    text-transform: uppercase;
+}
+
+.menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 300ms;
+}
+
+.menu ul li a:hover {
+    color: #37bcf9;
+    transform: scale(1.2, 1.2);
+}
+
+/* Banner */
+
+.banner {
+    width: 98%;
+    height: 100px;
+    border: 10px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px gray;
+    background-image: url(./img/bakbaner.png);
+    background-position: -360px -176px;
+    margin: 20px auto;
+    animation: backBanner 8s linear;
+}
+
+@keyframes backBanner {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: -360px -176px;
+    }
+}
+
+.banner h1 {
+    display: block;
+    overflow: hidden;
+    width: 80%;
+    font-family: "BebasNeue";
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    text-shadow: 2px 2px 1px black;
+    margin: 17px 275px;
+    color: white;
+    animation: showText 10s linear;
+}
+
+@keyframes showText {
+    0% {
+        transform: translateX(-500%) scale(5,5);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(500%) scale(5,5);
+        opacity: 1;
+    }
+    75% {
+        transform: translateX(-500%) scale(5,5);
+        text-shadow: none;
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 2px 2px 1px black;
+        color: white;
+        opacity: 1;
+    }
+}
+
+/* Cards */
+
+.card {
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 17%;
+    height: 305px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #ddd;
+    margin: 19px;
+    margin-top: 40px;
+    padding: 17px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.card:hover {
+    background-color: black;
+}
+
+.card:last-child {
+    margin-right: 0px;
+}
+
+.card .icon {
+    display: block;
+    width: 100%;
+    height: 130px;
+    font-size: 50px;
+    line-height: 95px;
+    text-align: center;
+    margin: 0px auto;
+    transition: all 300ms;
+}
+
+.card:hover .icon {
+    font-size: 70px;
+    color: #00538c;
+    animation: showIcon 300ms linear;
+}
+
+@keyframes showIcon {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.card .category {
+    width: 100%;
+    height: 50px;
+    font-family: "TrebuchetMs";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #00538c;
+    transition: all 300ms;
+}
+
+.card:hover .category {
+    color: white;
+    animation: showCategory 400ms linear;
+}
+
+@keyframes showCategory {
+    from {
+        transform: translateY(-300%);
+        color: black;
+    }
+    to {
+        transform: translateY(0%);
+        color: white;
+    }
+}
+
+.card .description {
+    text-align: center;
+    color: #023153;
+    font-family: "TrebuchetMs";
+    font-size: 15px;
+    transition: all 350ms;
+}
+
+.card:hover .description {
+    color: white;
+    animation: showDescription 400ms linear;
+}
+
+@keyframes showDescription {
+    from {
+        transform: translateX(-300%);
+        color: black;
+    }
+    to {
+        transform: translateX(0%);
+        color: white;
+    }
+}
