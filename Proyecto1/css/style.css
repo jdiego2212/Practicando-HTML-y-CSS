@@ -1,0 +1,395 @@
+/* Fuentes (fonts) */
+
+@font-face {
+    font-family: "nevis";
+    src: url(./fonts/nevis.eot);
+    src: url(./fonts/nevis.eot?iefix) format("embedded-opentype"),
+        url(./fonts/nevis.woff) format("woff"),
+        url(./fonts/nevis.ttf) format("truetype"),
+        url(./fonts/nevis.svg) format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "fajala";
+    src: url(./fonts/FjallaOne-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "icons";
+    src: url(./fonts/websymbols-regular-webfont.svg#WebSymbolsRegular) format("svg"),
+        url(./fonts/websymbols-regular-webfont.eot);
+    src: url(./fonts/websymbols-regular-webfont.eot?iefix) format("embedded-opentype"),
+        url(./fonts/websymbols-regular-webfont.woff) format("woff"),
+        url(./fonts/websymbols-regular-webfont.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos Generales */
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url(./img/pattern.png);
+}
+
+.widget a {
+    display: block;
+    margin-top: 10px;
+    color: #B23170;
+    text-decoration: none;
+    font-size: 17px;
+} 
+
+.widget a:hover {
+    color: #3170B2;
+}
+
+.widget a:visited {
+    color: gray;
+}
+
+.icon {
+    font-family: "icons";
+    float: left;
+    margin-right: 7px;
+    margin-top: -2px;
+}
+
+.clearFix {
+    float: none;
+    clear: both;
+}
+
+/* Formularios */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #ccc inset;
+    background-color: white;
+    padding: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    width: 95%;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 400ms;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select {
+    border: 1px solid #70B231;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #B23170;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 25px;
+    padding: 3px;
+    background-color: #B23170;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    font-size: 16px;
+    box-shadow: 1px 1px 3px gray;
+    background-color: #af4579;
+}
+
+/* Cabezera (header) */
+
+header {
+    min-width: 1030px;
+    width: 100%;
+    height: 250px;
+    margin: 0px auto;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "nevis";
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    text-shadow: 0px 2px 1px #3170B2;
+    transition: all 500ms;
+}
+
+header h1:hover {
+    text-shadow: 0px 2px 1px #3170B2, 0px 0px 10px #70B231;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #B23170;
+}
+
+#logoTipo {
+    width: 770px;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+#logoTipo img {
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 150px;
+}
+
+/* Barra de Navegación */
+
+#navbar {
+    width: 100%;
+    height: 40px;
+    background-color: #B23170;
+    color: white;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 15px;
+    box-shadow: 0px 0px 2px gray;
+}
+
+#navbar ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 78%;
+}
+
+#navbar > ul > li {
+    line-height: 40px;
+    float: left;
+    border-right: 1px solid rgb(69, 68, 68);
+    transition: all 555ms;
+}
+
+#navbar > ul > li a {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+#navbar > ul > li > a:first-child {
+    border-left: 1px solid rgb(69, 68, 68);
+}
+
+#navbar > ul > li:hover {
+    background-color:#70B231;
+    box-shadow: 0px 0px 5px green inset;
+}
+
+/* Menú desplegable */
+
+#navbar > ul > li > ul {
+    display: none;
+    position: absolute;
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1;
+}
+
+#navbar > ul > li:hover > ul {
+    display: block;
+}
+
+#navbar > ul > li:hover > ul > li {
+    display: block;
+    background-color: #B23170;
+    border-bottom: 1px solid rgb(69, 68, 68);
+    padding: 8px;
+    line-height: 25px;
+    font-size: 13px;
+    text-align: left;
+    transition: all 555ms;
+}
+
+#navbar > ul > li:hover > ul > li a {
+    color: white;
+    text-align: left;
+}
+
+#navbar > ul > li:hover > ul > li:hover {
+    background-color: #70B231;
+    box-shadow: 0px 0px 6px #ccc inset;
+}
+
+/* Contenido */
+
+#content {
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0px auto;
+}
+
+/* Barra lateral (aside) */
+
+aside {
+    width: 235px;
+    float: left;
+    margin: 25px;
+    background-color: aliceblue;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    font-family: sans-serif, Arial;
+}
+
+aside .widget {
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
+    border-bottom: 1px solid #333;
+}
+
+aside .widget:last-child {
+    margin-bottom: 50px;
+}
+
+aside h3 {
+    display: block;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    background-color: #e8eae8;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+
+aside ul li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    list-style: square;
+    font-size: 17px;
+}
+
+/* #frase {
+    clear: both;
+} */
+
+#read {
+    margin-top: 25px;
+}
+
+/* secciones */
+
+#sections {
+    float: right;
+    width: 75%;
+    font-family: sans-serif;
+    margin-right: 20px;
+    margin-top: 26px;
+}
+
+#sections .titulo {
+    font-family: "fajala";
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#sections .contentWeb {
+    margin-top: 40px;
+    background-color: aliceblue;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+#sections .contentWeb article {
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sections .contentWeb .date {
+    color: gray;
+    font-size: 15px;
+}
+
+#sections .stickers {
+    position: absolute;
+    margin-top: -42px;
+    z-index: 0;
+}
+
+#sections .sticker2 {
+    margin-left: 820px;
+}
+
+#history {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+#history a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #B23170;
+    transition: all 400ms;
+}
+
+#history a:hover {
+    color: #70B231;
+    font-size: 20px;
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #B23170;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    box-shadow: 0px 0px 2px gray;
+}
