@@ -1,0 +1,139 @@
+.wrap {
+    display: flex;
+    flex-direction: row;
+    
+    padding: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Aside */
+.wrap aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 25%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+aside h2 {
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
+}
+
+aside form {
+    display: flex;
+    flex-direction: column;
+}
+
+aside form input[type="email"],
+aside form input[type="password"] {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 18px;
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid red;
+    color: gray;
+}
+
+aside form input[type="email"]:focus,
+aside form input[type="password"]:focus {
+    color: black;
+}
+
+aside form #btn-form {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 97%;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: rgb(244, 84, 84);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+aside form #btn-form:hover {
+    box-shadow: 1px 4px 3px gray;
+    background-color: rgb(247, 111, 111);
+    font-size: 20px;
+}
+
+/* Content */
+.wrap .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 73%;
+}
+
+.content article h2 {
+    font-size: 22px;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.content article p {
+    font-size: 15px;
+    padding: 8px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.content article img {
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+}
+
+.content article {
+    flex-grow: 0;
+    background-color: white;
+    width: 230px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 10px gray;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #ccc;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    min-height: 200px;
+    border-top: 1px solid gray;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer .social img{
+    width: 45px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+footer .sign {
+    font-family: 'Satisfy', cursive;
+    color: #2c2b2b;
+    font-size: 20px;
+}
