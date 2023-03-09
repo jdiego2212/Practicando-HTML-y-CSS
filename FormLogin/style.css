@@ -1,0 +1,141 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: url(./formBg.png);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 20px auto;
+    max-width: 500px;
+    height: 500px;
+    color: white;
+    border-radius: 20px;
+
+    /* -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: (20px); */
+    background-color: rgba(250, 250, 250, 0.2);
+    
+}
+
+.container .logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 50%;
+}
+
+.container .logo h1 {
+    font-size: 40px;
+    font-weight: 800;
+    padding: 10px;
+    margin: 30px 0px 30px 0px;
+}
+
+.container .logo img {
+    width: 60px;
+    height: 90px;
+    margin: 15px;
+}
+
+.container .wrap-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 90%;
+
+    width: 100%;
+    height: fit-content;
+}
+
+.container .wrap-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 90%;
+    position: relative;
+}
+
+.wrap-form form #mail-icon {
+    position: absolute;
+    top: 53px;
+    right: 20px;
+    font-size: 25px;
+}
+
+.wrap-form form #lock-icon {
+    position: absolute;
+    top: 140px;
+    right: 20px;
+    font-size: 25px;
+}
+
+#email,
+#password {
+    width: 250px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: rgba(250, 250, 250, 0.6);
+    border: none;
+    padding: 17px;
+    font-size: 20px;
+}
+
+#btn-login {
+    width: 250px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(28, 25, 25, 0.9);
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+#btn-login:hover {
+    background-color: rgba(0, 31, 133, 0.9);
+    box-shadow: 1px 4px 10px #ccc, 1px -4px 10px #ccc;
+}
+
+.container .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 10%;
+    
+    width: 80%;
+    font-size: 15px;
+}
+
+.container .options > span {
+    font-size: 13px;
+    padding: 7px;
+    transition: 300ms;
+}
+
+.container .options > span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(1, 75, 165);
+    transform: scale(1.05);
+}
